@@ -19,7 +19,7 @@ Payment Methods accepted includes
 
 This involves understanding the business requirements and creating the necessary tables, then linking them via Entity-Relationship Diagram as seen below...
 
-![Fufu Republic ERD](C:\Users\HP\Desktop\CDE\SQL_Modelling_dbt\fufu_republic\fufurepublicERD.png)
+![Fufu Republic ERD](./fufurepublicERD.png)
 
 The following tables have been created, `order`, `payment`, `package`, `item`, `customer`, `branch`, `staff`, `date`, `dining_type`, `order_status`, `status`,
 `city` and `state`,  with the required columns within as seen above to capture the necessary data and show business insights.
