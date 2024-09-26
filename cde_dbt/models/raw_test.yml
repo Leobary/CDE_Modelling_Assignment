@@ -1,0 +1,31 @@
+models:
+  - name: src_customers
+    description: "Test on customers table to check unique and not_null values"
+    columns:
+      - name: first_name
+        data_tests:
+          - string_not_empty
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+  - name: src_dining
+    description: "Test on dining table to check unique, not_null and accepted values"
+    columns:
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ['1', '2', '3']
+  - name: dim_staff
+    description: "Test on dim_staff table to ensure non-empty, unique and not_null values"
+    columns:
+      - name: branchname
+        data_tests:
+          - string_not_empty
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+          
